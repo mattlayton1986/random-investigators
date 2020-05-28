@@ -1,0 +1,6 @@
+
+Ask for number of investigators
+
+Randomize button
+
+Display area - show investigator card for number of investigators chosen
