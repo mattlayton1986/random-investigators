@@ -28,8 +28,12 @@ class App extends Component {
   handleRandomize = () => {
     if (this.state.investigators) {
       let randomArray = [];
-      for (let i=0; i < this.state.chosen; i++) {
-        randomArray.push(Math.floor(Math.random() * (this.state.investigators.length - 1)));
+      let random_index = null;
+      while (randomArray.length < this.state.chosen) {
+        random_index = Math.floor(Math.random() * (this.state.investigators.length - 1));
+        if (!randomArray.includes(random_index)) {
+          randomArray.push(random_index);
+        }
       }
 
       this.setState({
