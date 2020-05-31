@@ -1,0 +1,28 @@
+button.selection:nth-of-type(2),
+button.selection:nth-of-type(3) {
+  border-radius: 0;
+}
+
+button.selection:first-of-type {
+  border-radius: 10px 0 0 10px;
+}
+
+button.selection:last-of-type {
+  border-radius: 0 10px 10px 0;
+}
+button.selection:not(:last-of-type) {
+  border-right: 1px solid #ddd;
+}
+
+button:hover {
+  background-color: #aaa;
+}
+
+button.selected {
+  background-color: #aaa;
+}
+
+button.getRandom {
+  margin: 10px;
+  font-size: 1.3rem;
+}
