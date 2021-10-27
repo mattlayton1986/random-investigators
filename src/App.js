@@ -1,11 +1,5 @@
 import React, { Component } from 'react';
 import Loader from './Loader/Loader';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from 'react-router-dom';
 import RandomInvestigator from './RandomInvestigator/RandomInvestigator';
 
 import './App.css';
